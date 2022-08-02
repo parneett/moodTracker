@@ -20,7 +20,7 @@
                                 <rect key="frame" x="80" y="99" width="254" height="252"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="My project-1-2" translatesAutoresizingMaskIntoConstraints="NO" id="kn4-D5-KHx">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="gradient" translatesAutoresizingMaskIntoConstraints="NO" id="kn4-D5-KHx">
                                 <rect key="frame" x="-659" y="-173" width="1559" height="1286"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -32,8 +32,11 @@
                                     <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="jhg-DK-QmX" kind="show" id="zvV-yv-zd9"/>
+                                </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="My project-1" translatesAutoresizingMaskIntoConstraints="NO" id="cpq-Q1-ewA">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="cpq-Q1-ewA">
                                 <rect key="frame" x="62" y="99" width="290" height="400"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -61,7 +64,7 @@
         <!--View Controller-->
         <scene sceneID="0tk-QC-v97">
             <objects>
-                <viewController id="jhg-DK-QmX" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="jhg-DK-QmX" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cj5-9e-wHU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -77,40 +80,41 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwd-RW-g7p">
-                                <rect key="frame" x="20" y="283" width="93" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" backgroundImage="happy"/>
-                                <buttonConfiguration key="configuration" style="plain" title="                  "/>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="happy" translatesAutoresizingMaskIntoConstraints="NO" id="PsO-bX-JOL">
-                                <rect key="frame" x="20" y="96" width="104" height="430"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="happy" translatesAutoresizingMaskIntoConstraints="NO" id="e18-Ra-G5q">
+                                <rect key="frame" x="20" y="234" width="108" height="199"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gc-r2-sum">
-                                <rect key="frame" x="166" y="271" width="86" height="90"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="nuetral" translatesAutoresizingMaskIntoConstraints="NO" id="85l-gJ-SF8">
+                                <rect key="frame" x="151" y="211" width="113" height="248"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="sad" translatesAutoresizingMaskIntoConstraints="NO" id="nRo-2y-cLe">
+                                <rect key="frame" x="279" y="211" width="115" height="244"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qTn-VE-4Wr">
+                                <rect key="frame" x="20" y="282" width="108" height="102"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="          "/>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="nuetral" translatesAutoresizingMaskIntoConstraints="NO" id="0qk-Ql-1Tm">
-                                <rect key="frame" x="153" y="83" width="113" height="457"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vHW-fq-mAV">
-                                <rect key="frame" x="297" y="271" width="97" height="84"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YtN-N8-z5r">
+                                <rect key="frame" x="150" y="282" width="114" height="102"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="           "/>
+                                <buttonConfiguration key="configuration" style="plain" title="      "/>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="sad" translatesAutoresizingMaskIntoConstraints="NO" id="vKu-BV-sOC">
-                                <rect key="frame" x="290" y="57" width="110" height="508"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2je-nu-yQh">
+                                <rect key="frame" x="279" y="279" width="115" height="112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="      "/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DtG-me-spm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Nu8-Tc-7Cc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rHv-co-bsM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -163,7 +167,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="SAMHSA"/>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="My project-1" translatesAutoresizingMaskIntoConstraints="NO" id="AqR-i4-ogT">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="AqR-i4-ogT">
                                 <rect key="frame" x="113" y="642" width="204" height="192"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -180,8 +184,9 @@
     </scenes>
     <resources>
         <image name="My project-1" width="500" height="500"/>
-        <image name="My project-1-2" width="3300" height="5100"/>
+        <image name="gradient" width="3300" height="5100"/>
         <image name="happy" width="1080" height="1080"/>
+        <image name="logo" width="500" height="500"/>
         <image name="nuetral" width="1080" height="1080"/>
         <image name="ocean" width="640" height="1136"/>
         <image name="sad" width="1080" height="1080"/>
